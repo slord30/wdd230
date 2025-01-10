@@ -15,7 +15,12 @@
     padding: 0;
     box-sizing: border-box;
     max-width: 100%
-    
+}
+
+body {
+    width: 900px;
+    margin: 0 auto;
+    margin-top: 5rem;
 }
 
 header img {
@@ -26,7 +31,7 @@ header img {
 header span {
     font-family: var(--heading-font);
     font-size: 25px;
-    color: #fff;
+    color: 000;
     margin-left: 1rem;
 }
 
@@ -62,7 +67,8 @@ nav {
 
 nav li {
     display: block;
-    color: #fff;
+    color: #000;
+    font-weight: bold;
     text-align: center;
     padding: .5rem;
     text-decoration: none;
@@ -79,6 +85,11 @@ nav .active {
 p, li {
     font-family: var(--paragraph-font);
     font-weight: 700;
+    color: #000;
+}
+
+a {
+    color: black;
 }
 
 
@@ -96,7 +107,7 @@ p, li {
 
 .parent h2 {
     background-color: var(--dark-1);
-    color: #fff;
+    color: #000;
     text-transform: uppercase;
     padding: 1rem 0;
     text-align: center;
