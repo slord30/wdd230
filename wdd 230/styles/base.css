@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&family=Rubik+Dirt&display=swap");
+
+:root{
+    --dark-1: #E671F0;
+    --secondary-1: #F071B4;
+    --dark-2: #B763EF;
+    --secondary-2: #F07371;
+    --light-color: #F0C1EC;
+    
+    --heading-font: "Rubik Dirt", serif;
+    --paragraph-font: "Poiret One", serif;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header img {
+    margin: 0 auto;
+    box-shadow: 1px 1px 10px black;
+}
+
+header span {
+    font-family: var(--heading-font);
+    font-size: 25px;
+    color: #fff;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: var(--secondary-2);
+    padding: 1rem;
+}
+
+h1 {
+    color: var(--secondary-2);
+    text-align: center;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--dark-1);
+    padding: 1rem;
+    margin: 0 1rem 0 1rem;
+}
+
+h1, h2 {
+    font-family: var(--heading-font);
+    font-weight: 200;
+}
+
+nav ul {
+    list-style-type: none;;
+}
+
+nav {
+    background-color: var(--dark-2);
+}
+
+nav li {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: .5rem;
+    text-decoration: none;
+}
+
+nav li:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+nav .active {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+p, li {
+    font-family: var(--paragraph-font);
+    font-weight: 700;
+}
+
+
+.parent {
+   margin: 1rem 2vw; 
+}
+
+.parent section {
+    border: 1px solid var(--dark-1);
+    background-color: var(--light-color);
+    border-radius: 10px;
+    margin: 1rem 0;
+    overflow: hidden;
+}
+
+.parent h2 {
+    background-color: var(--dark-1);
+    color: #fff;
+    text-transform: uppercase;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.parent ul, .parent p {
+    padding: 10px
+}
+
+section li {
+    padding-left: 1rem;
+}
+
+section#info {
+    text-align: center;
+}
+
+footer {
+    display: flex;                /* Enable flexbox */
+    flex-direction: column;       /* Stack the p tags vertically */
+    justify-content: center;      /* Center the items vertically */
+    align-items: center;          /* Center the items horizontally */
+    text-align: center;           /* Ensure text is centered inside each p */
+    background-color: var(--secondary-1);
+    padding: 1rem;
+    margin: 0 auto;
+}
+
+#about span {
+    display: block;
+}
+
+span#name, span#country {
+    font-size: 20px;
+}
+
+
+
