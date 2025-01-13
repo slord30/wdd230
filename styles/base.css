@@ -44,7 +44,6 @@ header {
 }
 
 h1 {
-    color: var(--secondary-2);
     text-align: center;
     text-transform: uppercase;
     border-bottom: 1px solid var(--dark-1);
