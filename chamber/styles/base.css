@@ -1,0 +1,188 @@
+:root{
+    --dark-1: #ef3e36;
+    --secondary-1: #2f97c1;
+    --dark-2: #171738;
+    --secondary-2: #FDB833;
+    --light: #ffd07b;
+    
+    --heading-font: "Bitter", serif;
+    --fancing-heading: "Rouge Script", serif;
+    --paragraph-font: "Figtree", serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%
+}
+
+/**************HEADER************/
+
+.logo {
+    display: flex; /* Use flexbox for centering the image */
+    justify-self: flex-start; /* Align image to the left */
+    margin-left: .5rem;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 40%; /* Ensure the image is responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.social {
+    justify-self: flex-end;
+    margin-right: .5rem;
+    align-items: center;
+}
+
+header {
+        margin: 1rem auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        /* justify-items: flex-end; */
+        border-bottom: 1px solid #ccc;
+        max-width: 1920px;
+}
+
+/**************NAVIGATION************/
+/* small view navigation */
+
+#menu {
+    display: block;
+    font-size: 2rem;
+    background: var(--light-color);
+    border: 0;
+    color: #000;
+    font-weight: 700;
+    padding-left: .75rem;
+    text-decoration: none;
+    width: 100%;
+}
+
+#menu::before {
+	content: "≡";
+}
+
+#menu.open::before {
+    content: "✖";
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style: none;
+    background-color: var(--dark-2);
+    font-size: 18px;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation li {
+    padding: .75rem;
+    color: #fff;
+}
+
+nav li:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.active {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* when the button is clicked - the open class is toggled (added/removed) */
+.open li {
+    display: block;
+}
+
+/* End of small view navigation */
+
+
+/**************MAIN***************/
+
+h1 {
+    color: var(--dark-1);
+    font-family: var(--heading-font);
+}
+
+h2 {
+    color: var(--secondary-1);
+    font-family: var(--heading-font);
+
+}
+
+p, button, nav {
+    font-family: var(--paragraph-font);
+}
+
+/**************HERO BANNER***************/
+
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.hero img {
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+    grid-column: 1 / 4;
+    grid-row: 1 / 7;
+    justify-self: center;
+}
+
+.hero h1 {
+    grid-row: 1 / 4;
+    grid-column: 1 / 3;
+    padding-left: 5rem;
+    color: #fff;
+    font-size: 25px;
+}
+
+.hero a {
+    grid-row: 4 / 5;
+    grid-column: 1 / 2;
+    margin-left: 5rem;
+}
+
+button {
+    background-color: var(--secondary-2);
+    padding: 10px;
+
+}
+
+/**************EVENTS SECTION***************/
+section#events {
+    padding: 5rem 2rem 5rem 2rem;
+}
+
+
+
+/**************WEATHER SECTION***************/
+section#weather {
+    padding: 5rem 2rem 5rem 2rem;
+    background-color: var(--light);
+}
+
+
+
+/**************SPOTLIGHTS SECTION***************/
+section#spotlights {
+    padding: 5rem 2rem 5rem 2rem;
+}
+
+
+/**************FOOTER SECTION***************/
+footer {
+    padding: 1rem 0 1rem 2rem;
+    border-top: 1px solid var(--dark-1);
+}
+
+
+

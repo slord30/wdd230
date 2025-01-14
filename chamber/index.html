@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarah Lord - WDD 230 - Web Frontend Development</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development - Sarah Lord - Chamber of Commerce Website Proect">
+    <meta name="author" content="Sarah Lord">
+    <meta property="og:title" content="Conroe City Chamber of Commerce" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://slord30.github.io/wdd230/" />
+    <meta property="og:image" content="https://slord30.github.io/wdd230/images/conroe.webp" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Figtree:ital,wght@0,300..900;1,300..900&family=Rouge+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script defer src="scripts/getDates.js"></script>
+    <script defer src="scripts/hamMenu.js"></script>
+    <script defer src="scripts/darkMode.js"></script>
+    <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="logo">
+            <img src="images/logo_placeholder.png" alt="logo" class="logo" height="100" loading="lazy">
+        </a>
+        <div class="social">
+            <img src="images/facebook.png" alt="facebook" loading="lazy" height="20">
+            <img src="images/instagram.png" alt="instagram" loading="lazy" height="20">
+            <img src="images/linkedin.png" alt="linkedin" loading="lazy" height="20">
+            <img src="images/twitter.png" alt="twitter" loading="lazy" height="20">
+            <img src="images/you-tube.png" alt="youtube" loading="lazy" height="20">
+        </div>
+    </header>
+    <a id="menu" href="#"></a>
+    <nav>
+        <ul class="navigation">
+            <li class="active"><a href="#" title="Home"></a>Home</li>
+            <li><a href="#" title="Discover"></a>Discover</li>
+            <li><a href="#" title="Directory"></a>Directory</li>
+            <li><a href="#" title="Join"></a>Join</li>
+        </ul>
+    </nav>
+    <main>
+        <div class="hero">
+            <img src="images/conroe.webp" alt="Conroe City" loading="lazy" width="100%">
+            <h1>Become a Member Today and Strengthen Your Business in Conroe!</h1>
+            <a href="join.html">
+                <button class="appt-button">Join Now</button>
+            </a>
+        </div>
+        <section id="events">
+            <h2>Upcoming Events</h2>
+        </section>
+        <section id="weather">
+            <h2>Local Weather</h2>
+        </section>
+        <section id="spotlights">
+            <h2>Company Spotlights</h2>
+        </section>
+    </main>
+    <footer>
+        <p id="about"> 
+            <span id="currentYear"></span> 
+            <span id="name">Sarah Lord</span> 
+            <span id="country"> USA</span>
+            </p>
+        <p id="contact">
+            Phone: 936-555-2584
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
