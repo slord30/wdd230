@@ -91,6 +91,9 @@ a {
     color: black;
 }
 
+ul li {
+    margin-bottom: 1rem;
+}
 
 .parent {
     margin: 1rem 1rem 5rem 1rem;
