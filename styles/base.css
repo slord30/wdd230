@@ -56,30 +56,58 @@ h1, h2 {
     font-weight: 200;
 }
 
-nav ul {
-    list-style-type: none;
-}
 
-nav {
-    background-color: var(--dark-2);
-}
+/* small view navigation */
 
-nav li {
+#menu {
     display: block;
+    font-size: 2rem;
+    background: var(--light-color);
+    border: 0;
     color: #000;
-    font-weight: bold;
-    text-align: center;
-    padding: .5rem;
+    font-weight: 700;
+    padding-left: .5rem;
     text-decoration: none;
+}
+
+#menu::before {
+	content: "≡";
+}
+
+#menu.open::before {
+    content: "✖";
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style: none;
+    background-color: var(--dark-2);
+    font-size: 18px;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation li {
+    padding: .5rem;
 }
 
 nav li:hover {
     background-color: rgba(255, 255, 255, 0.2);
 }
 
-nav .active {
+.active {
     background-color: rgba(0, 0, 0, 0.2);
 }
+
+/* when the button is clicked - the open class is toggled (added/removed) */
+.open li {
+    display: block;
+}
+
 
 p, li {
     font-family: var(--paragraph-font);
@@ -91,7 +119,7 @@ a {
     color: black;
 }
 
-ul li {
+.parent ul li {
     margin-bottom: 1rem;
 }
 

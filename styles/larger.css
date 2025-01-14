@@ -1,5 +1,6 @@
 @media screen and (min-width: 500px) {
     
+    
     .parent {
         display: grid;
         grid-template-columns: 3fr 1.5fr;
@@ -14,11 +15,20 @@
         font-size: 55px;
     }
 
-    nav ul {
-        display: flex;
+    #menu {
+        display: none; /* hide hamburger button */
     }
 
-    nav ul li {
-        flex: 1 1 100%;
+    .navigation {
+        flex-direction: row;
     }
+
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+        text-align: center;
+        padding: .75rem;
+    }
+
+
 }    
