@@ -3,7 +3,7 @@
     --secondary-1: #2f97c1;
     --dark-2: #171738;
     --secondary-2: #FDB833;
-    --light: #ffe8be;
+    --light: #FFD07B;
     
     --heading-font: "Bitter", serif;
     --fancing-heading: "Rouge Script", serif;
@@ -168,6 +168,10 @@ section#events {
 section#weather {
     padding: 5rem 2rem 5rem 2rem;
     background-color: var(--light);
+}
+
+#weather h2 {
+    color: var(--dark-2);
 }
 
 
