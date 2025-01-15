@@ -3,7 +3,7 @@
     --secondary-1: #2f97c1;
     --dark-2: #171738;
     --secondary-2: #FDB833;
-    --light: #ffd07b;
+    --light: #ffe8be;
     
     --heading-font: "Bitter", serif;
     --fancing-heading: "Rouge Script", serif;
@@ -33,7 +33,7 @@
 
 .social {
     justify-self: flex-end;
-    margin-right: .5rem;
+    margin-right: 1.5rem;
     align-items: center;
 }
 
@@ -147,13 +147,13 @@ p, button, nav {
 
 .hero a {
     grid-row: 4 / 5;
-    grid-column: 1 / 2;
-    margin-left: 5rem;
+    grid-column: 1 / 3;
+    padding-left: 5rem;
 }
 
 button {
     background-color: var(--secondary-2);
-    padding: 10px;
+    padding: .5rem 2rem;
 
 }
 
